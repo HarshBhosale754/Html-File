@@ -1,0 +1,47 @@
+<html>
+ <head>
+  <style>
+   h1:nth-of-type(odd) {
+                         color:red;
+                         background:pink;
+                         border:solid black;
+                         animation-name:change;
+                         animation-duration:1s;
+                         animation-iteration-count:infinite;
+                        }
+   @keyframes kchange {
+                      from{color:red;background:pink;}
+                      to{color:pink;background:red;}
+                     }
+   h1:nth-of-type(even) {
+                         color:orange;
+                         background:blue;
+                         border:solid black;
+                         animation-name:change;
+                         animation-duration:1s;
+                         animation-iteration-count:infinite;
+                        }
+    @keyframes change {
+                      0%{color:orange;background:blue;}
+                      25%{color:blue;background:orange;}
+                      50%{color:red;background:pink;}
+                      75%{color:pink;background:red;}
+                      100%{color:green;background:yellow;}
+                     }
+   body {
+         background:blue;
+         border:solid black;
+         animation-name:kchange;
+         animation-duration:1s;
+         animation-iteration-count:infinite;
+        }
+
+  </style>
+ </head>
+ <body>
+  <h1>Welcome to CSS</h1>
+  <h1>nth-of-type selector</h1>
+  <h1>Sadguru Gadage Maharaj College Karad</h1>
+  <h1>Autonomous College</h1>
+ </body>
+</html>
